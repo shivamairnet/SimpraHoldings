@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<!-- Basic -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Simpra Holdings</title>	
+
+		<meta name="keywords" content="Simpra Holdings" />
+		<meta name="description" content="Simpra Holdings">
+		<meta name="author" content="okler.net">
+
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="img/Simpra/Company.png" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="img/Simpra/Company.png">
+
+		<!-- Mobile Metas -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+
+		<!-- Web Fonts  -->
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CRoboto+Slab:300,400,700,900&display=swap" rel="stylesheet" type="text/css">
+
+		<!-- Vendor CSS -->
+		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+		<link rel="stylesheet" href="vendor/animate/animate.compat.css">
+		<link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.min.css">
+
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="css/theme.css">
+		<link rel="stylesheet" href="css/theme-elements.css">
+		<link rel="stylesheet" href="css/theme-blog.css">
+		<link rel="stylesheet" href="css/theme-shop.css">
+
+		<!-- Demo CSS -->
+		<link rel="stylesheet" href="css/demos/demo-cleaning-services.css">
+
+		<!-- Skin CSS -->
+		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-cleaning-services.css">
+
+		<!-- Theme Custom CSS -->
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- Head Libs -->
+		<script src="vendor/modernizr/modernizr.min.js"></script>
+
+		<style>
+			/* Extra Small Devices (Phones, 0px and up) */
+@media(max-width:320px){
+	.ano-custom{
+				width: 100px; 
+				height: 100px;
+				margin: auto;
+			}
+			.img-fluid{
+				margin-left: -40px;
+			}
+}
+@media(max-width:376px){
+	.ano-custom{
+				width: 150px; 
+				height: 150px;
+				margin: auto;
+			}
+			.img-fluid{
+				margin-left: -10px;
+			}
+}
+
+
+@media (max-width: 575.98px) {
+  /* Your CSS for extra small devices */
+  .ano-custom{
+				width: 200px; 
+				height: 200px;
+				margin: auto;
+			}
+			.img-fluid{
+				width: 150px;
+				height: 150px;
+			}
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Your CSS for small devices */
+  .ano-custom{
+				width: 300px; 
+				height: 300px;
+				margin: auto;
+			}
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Your CSS for medium devices */
+  .ano-custom{
+				width: 350px; 
+				height: 350px;
+				margin: auto;
+			}
+			.img-fluid{
+				width: 220px;
+				height: 220px;
+				margin-left: 60px;
+			}
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Your CSS for large devices */
+  .ano-custom{
+				width: 450px; 
+				height: 450px;
+			}
+			.img-fluid{
+				width: 300px;
+				height: 300px;
+			}
+			.custom-margin1{
+				margin-top: -200px;
+			}
+			.custom-margin2{
+				margin-top: -210px;
+			}
+			.custom-margin3{
+				margin-left: 126px;
+			}
+}
+
+/* Extra Large Devices (Desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Your CSS for extra large devices */
+  .ano-custom{
+				width: 500px; 
+				height: 500px;
+			}
+			.custom-margin1{
+				margin-top: -300px;
+			}
+			.custom-margin2{
+				margin-top: -320px;
+			}
+			.custom-margin3{
+				margin-left: 126px;
+			}
+}
+
+/* Extra Extra Large Devices (Large Desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /* Your CSS for extra extra large devices */
+  .ano-custom{
+				width: 500px; 
+				height: 500px;
+			}
+			.custom-margin1{
+				margin-top: -300px;
+			}
+			.custom-margin2{
+				margin-top: -320px;
+			}
+			.custom-margin3{
+				margin-left: 126px;
+			}
+}
+
+/* cards css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.button-card-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #2c79cb;
+  color: white;
+  border: none;
+  width: 180px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+
+.filter-btn.active{
+    background-color: hwb(27 24% 4%);
+    color: black;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 10px;
+}
+
+.card {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px;
+  height: 450px;
+
+}
+
+.card-img div {
+  background-color: #b2b2fd;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+			
+		</style>
+	</head>
+	<body>
+
+		<div class="body">
+			<header id="header" class="header-effect-shrink"
+			data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 85}">
+			<div class="header-body header-body-bottom-border border-top-0">
+				<!-- Logo changed with company name and linked the name and photo to home page -->
+				<div class="header-container container">
+					<div class="header-row">
+						<div class="header-column">
+							<div class="header-row">
+								<div class="header-logo">
+									<a href="index.html">
+										<img src="img/Simpra/Company.png" width="50" height="50" alt="" />
+									</a>
+								</div>
+								<a href="index.html" class="company-name ms-3 text-color-1">Simpra
+									Holdings</a>
+							</div>
+						</div>
+						<!-- Updated the navbar with required links -->
+						<div class="header-column justify-content-end">
+							<div class="header-row">
+								<div class="header-nav header-nav-links">
+									<div
+										class="header-nav-main header-nav-main-text-capitalize header-nav-main-effect-2 header-nav-main-sub-effect-1">
+										<nav class="collapse">
+											<ul class="nav nav-pills" id="mainNav">
+												<li><a href="index.html"
+														class="nav-link">Home</a></li>
+												<li><a href="about.html"
+														class="nav-link active">About Us</a></li>
+												<!-- <li><a href="demo-cleaning-services-services.html"
+														class="nav-link">Services</a></li> -->
+												<li><a href="portfolio.html"
+														class="nav-link">Portfolio</a></li>
+												<!-- <li><a href="demo-cleaning-services-blog.html" class="nav-link">Blog</a>
+												</li> -->
+												<li><a href="contact.html"
+														class="nav-link">Contact</a></li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="feature-box feature-box-style-2 align-items-center ms-lg-4">
+									<div class="feature-box-icon d-none d-sm-inline-flex">
+										<img class="icon-animated" width="48"
+											src="img/demos/cleaning-services/icons/phone.svg" alt="" data-icon
+											data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary position-relative bottom-3'}" />
+									</div>
+									<div class="feature-box-info ps-2">
+										<p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1">CALL US NOW</p>
+										<a href="tel:+1234567890"
+											class="text-color-tertiary text-color-hover-primary text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0">+97143948446</a>
+									</div>
+								</div>
+								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
+									data-bs-target=".header-nav-main nav">
+									<i class="fas fa-bars"></i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+			<div role="main" class="main">
+
+				<div class="container my-5 pb-0">
+                    <section style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                        <div style="flex: 1; padding: 20px; background-color: white; border-radius: 8px; min-width: 300px;">
+                          <h2 class="appear-animation" style="margin-top: 35px; font-size: 44px; color: #333;font-weight: 700;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
+                        </div>
+                        <div style="flex: 1; padding: 20px; background-color: white; border-radius: 8px; min-width: 300px;">
+                          <p class="appear-animation" style="margin-top: 0; font-size: 1.2rem; color: #333;line-height: 1.95rem;font-weight: 500;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
+                        </div>
+                      </section>
+				</div>
+
+
+				<div class="divider divider-small divider-small-lg text-center appear-animation d-flex justify-content-center " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0" style="margin-top:-35px;">
+					<hr class="border-radius" style="background-color: #0052CC;">
+				</div>
+
+  <section class="button-card-section">
+    <!-- Filter Buttons -->
+    <div class="button-container" style="margin-top: 10px;margin-bottom: 50px;">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Start-Up-Investment">Start Up Investment</button>
+      <button class="filter-btn" data-category="Companies-In-UAE">Companies In UAE</button>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+      <!-- Cards -->
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Rockley.png" height="150px" width="315px" alt="">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Rockly Photonics (USA)</div>
+          </div>
+          <span class="lighter">Rockley Photonics is a fabless supplier of silicon photonics chipsets, IP, and custom designs for high-volume optics applications.</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/astrocast.png" height="150px" width="315px" alt="">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Astrocast (SA)</div>
+          </div>
+          <span class="lighter">Switzerland Astrocast is a constellation of nanosatellites dedicated to the Internet of Things (IoT) and Machine to Machine communication (M2M). </span>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/axis.png" height="150px" width="315px" alt="">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Axis Energy (Australia)</div>
+          </div>
+          <span class="lighter">Axis Energy Group is delivering cost-effective renewable energy solutions to help create a better, cleaner world.</span>
+        </div>
+      </article>
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/booqu.png" height="150px" width="315px" alt="">
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Instadeal (Booqu) (USA)</div>
+          </div>
+          <span class="lighter">The first online concierge that uses artificial intelligence to find and book local services.</span>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+          <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Altro Smart INC (USA)</div>
+          </div>
+          <span class="lighter">The Next Generation Smart Lock redefining the home security market.
+        </span>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/amiseq.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Amiseq INC (USA)</div>
+          </div>
+          <span class="lighter">Leader In Cyber Security. Amiseq provides various services for augmenting defense including managed perimeter, core endpoint and cloud security.
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/demas-logo.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Demas Machinery & Equipment Rental LLC </div>
+          </div>
+          <span class="lighter">Demas Machinery & Equipment Rental LLC is a company based in Dubai (UAE) specialized in the demolition sector, owned and managed by an Italian team of professionals undertaking Controlled Demolitions, Excavations and Special Equipment rentals.
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/nirvatech-logo.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Nirvatech Measuring and Control Systems LLC</div>
+          </div>
+          <span class="lighter">NirvaTech (www.nirvatech.com) offers a diverse range of engineered products, including customized compressed air and gas solutions, nitrogen and oxygen generators, gas analyzer systems, industrial gearboxes, and genuine parts with reliable services for top air compressor brands.
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/daalchini.jpg" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Daalchini (UAE)</div>
+          </div>
+          <span class="lighter">Part of Simpra Holdings' diverse portfolio, Daalchini brings the rich and authentic flavors of Indian cuisine to the different spots in UAE (Century Village - UAE, World Trade Center - UAE, Al Khuwair - Muscat Oman, & Al Hail - Muscat Oman) offering a delightful culinary experience for food lovers. 
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Shanghai Station (UAE)</div>
+          </div>
+          <span class="lighter">Shanghai Station, a culinary gem under Simpra Holdings, brings authentic Chinese flavors to life with its signature selection of soups, dim sum, and traditional dishes. Located at The Greens, Dubai, UAE, and DMCC JLT, Dubai, UAE, it offers a dining experience that embodies the essence of Chinese cuisine. 
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Poke & Co.jpg" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Poke & Co (UAE)</div>
+          </div>
+          <span class="lighter">Poke & Co, a proud addition to Simpra Holdings' portfolio, serves the best poke bowls in the UAE. Operating through its innovative dark kitchen model, it brings fresh, flavorful experiences to food lovers across the region. 
+        </span>
+        </div>
+      </article>
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+          <div class="card-imgs">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/gugo.png" height="150px" width="315px" alt="">  
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="flex">
+            <div class="project-title">Yugo Sushi</div>
+          </div>
+          <span class="lighter">Yugo Sushi, part of Simpra Holdings' portfolio, is a Japanese restaurant with locations in Emaar Business Park and Al Mass Tower, DMCC JLT. Inspired by the Japanese concept of "Yugo" (fusion), it reimagines traditional recipes with a modern twist, offering a unique and delightful dining experience. 
+        </span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
+  
+  // Default settings: Show all cards and set "All" button as active
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ensure all cards are displayed on page load
+    cards.forEach(card => {
+      card.style.display = 'block';
+    });
+  
+    // Set the "All" button as active
+    document.querySelector('[data-category="All"]').classList.add('active');
+  });
+  
+  // Filter functionality
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+  
+      // Update active button styling
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+  
+      // Check if "All" is clicked
+      if (category === 'All') {
+        // Show all cards
+        cards.forEach(card => {
+          card.style.display = 'block';
+        });
+      } else {
+        // Hide all cards first, then show the matching ones
+        cards.forEach(card => {
+          if (card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  });
+</script>  
+
+				
+				<!-- <div class="container mb-5">
+					<div class="row justify-content-center pb-2 mb-3">
+						<div class="col-md-9 col-lg-12 text-center">
+							<h2 class="text-color-secondary font-weight-bold line-height-6 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Our Team</h2>
+							<p class="custom-font-secondary text-4 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultri.</p>
+						</div>
+					</div>
+					<div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+						<div class="col">
+							<div class="owl-carousel nav-outside nav-arrows-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
+								<div>
+									<div class="card custom-card-style-1 custom-card-style-1-variation">
+										<div class="card-body text-center bg-color-light-scale-1 py-5">
+											<div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+												<a href="#">
+													<img src="img/demos/cleaning-services/team/team-1.jpg" class="img-fluid rounded-circle" alt="" />
+												</a>
+											</div>
+											<h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0"><a href="#" class="text-color-secondary text-color-hover-primary text-decoration-none">John Doe</a></h4>
+											<p class="text-2 pb-1 mb-2">General Cleaner</p>
+											<ul class="social-icons custom-social-icons social-icons-big">
+												<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+												<li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="card custom-card-style-1 custom-card-style-1-variation">
+										<div class="card-body text-center bg-color-light-scale-1 py-5">
+											<div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+												<a href="#">
+													<img src="img/demos/cleaning-services/team/team-2.jpg" class="img-fluid rounded-circle" alt="" />
+												</a>
+											</div>
+											<h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0"><a href="#" class="text-color-secondary text-color-hover-primary text-decoration-none">Judie Doe</a></h4>
+											<p class="text-2 pb-1 mb-2">General Cleaner</p>
+											<ul class="social-icons custom-social-icons social-icons-big">
+												<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+												<li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="card custom-card-style-1 custom-card-style-1-variation">
+										<div class="card-body text-center bg-color-light-scale-1 py-5">
+											<div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+												<a href="#">
+													<img src="img/demos/cleaning-services/team/team-3.jpg" class="img-fluid rounded-circle" alt="" />
+												</a>
+											</div>
+											<h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0"><a href="#" class="text-color-secondary text-color-hover-primary text-decoration-none">Monica Doe</a></h4>
+											<p class="text-2 pb-1 mb-2">General Cleaner</p>
+											<ul class="social-icons custom-social-icons social-icons-big">
+												<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+												<li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="card custom-card-style-1 custom-card-style-1-variation">
+										<div class="card-body text-center bg-color-light-scale-1 py-5">
+											<div class="custom-card-style-1-image-wrapper bg-primary rounded-circle d-inline-block mb-3">
+												<a href="#">
+													<img src="img/demos/cleaning-services/team/team-1.jpg" class="img-fluid rounded-circle" alt="" />
+												</a>
+											</div>
+											<h4 class="text-color-secondary font-weight-bold line-height-1 text-5 mb-0"><a href="#" class="text-color-secondary text-color-hover-primary text-decoration-none">John Doe</a></h4>
+											<p class="text-2 pb-1 mb-2">General Cleaner</p>
+											<ul class="social-icons custom-social-icons social-icons-big">
+												<li class="social-icons-instagram"><a href="http://www.instagram.com/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+												<li class="social-icons-twitter mx-2"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+												<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> -->
+
+				<!-- <section class="section section-with-shape-divider section-height-3 bg-tertiary border-0 m-0">
+					<div class="shape-divider" style="height: 116px;">
+						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 116" preserveAspectRatio="xMinYMin">
+							<path class="custom-svg-fill-color-tertiary-darken" d="M0,24c2.86,0.42,7.41,1.1,13,2c6.13,0.98,10.67,1.77,12,2c11.67,2.01,42.24,7.05,68,11
+								c7.79,1.2,22.72,3.48,41,6c20.75,2.86,38.83,5.06,74,9c41.19,4.61,62.09,6.95,93,10c57.4,5.66,101.17,9.03,114,10
+								c9.13,0.69,40.29,3.02,109,7c48.33,2.8,87.04,5.04,132,7c76.86,3.35,135.02,4.27,184,5c104.27,1.56,187.39,0.71,234,0
+								c21.92-0.34,91.62-1.5,183-5c50.62-1.94,106.43-4.12,181-9c57.01-3.73,108.05-7.94,152-12c94.91-8.78,162.37-17.44,182-20
+								c41.76-5.45,72.06-10.09,96-14c21.23-3.47,39.04-6.63,52-9c0-11.67,0-23.33,0-35C1279-11,638-11-3-11C-2,0.67-1,12.33,0,24z"/>
+							<path fill="#FFF" d="M-7,23c1.59,0.23,4.03,0.58,7,1c82.06,11.6,145.17,16.35,182,19c244.62,17.62,377,23,377,23
+								c157.86,6.42,277.64,7.71,308,8c75.8,0.73,232.89,1.31,438-6c0,0,137.72-4.66,358-19c42.98-2.8,104.01-7.03,183-16
+								c33.26-3.78,60.85-7.38,80-10c0-9.01,0-18.01,0-27.02c-644,0-1288,0-1932,0C-6.33,4.99-6.67,13.99-7,23z"/>
+						</svg>
+					</div>
+					<div class="container pt-4 pb-3 mt-5">
+						<div class="row align-items-center justify-content-center pt-3">
+							<div class="col-md-9 col-lg-7 col-xl-9 text-center text-xl-start mb-4 mb-xl-0">
+								<h2 class="text-color-light font-weight-medium line-height-4 text-9 negative-ls-1 mb-2">For <span class="font-weight-extra-bold custom-highlight-1 p-1 appear-animation" data-appear-animation="customHighlightAnim" data-appear-animation-delay="300">Residential and Commercial</span> Cleaning</h2>
+								<p class="custom-font-secondary custom-font-size-1 font-weight-light text-color-light opacity-8 mb-0">Our Staff is trained to clean everything you need!</p>
+							</div>
+							<div class="col-xl-3 text-center text-xl-end">
+								<div class="position-relative">
+									<a href="demo-cleaning-services-contact.html" class="btn btn-secondary btn-modern font-weight-bold text-3 btn-px-4 py-3">BOOK NOW IN 60 SECONDS</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+			</div>
+
+			<footer id="footer" class="m-0 border-0 overflow-hidden" style="background-color: #F4F9FD ;">
+				<div class="container">
+					<div class="row py-5 custom-row-footer">
+						<div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
+							<img width="120" height="100" src="img/Simpra/Company.png" alt="Logo Footer" style="margin-bottom: 10px;">
+							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Holdings,</br>
+								Unit 3008, Mazaya Business Ave. AA1 Tower, P.O.Box 391935, Dubai-UAE
+							
+								</p>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-9 footer-column" >
+							<div class="d-flex align-items-start align-sm-items-end justify-content-between flex-column h-100 mt-4 mt-sm-0">
+								<div class="d-flex flex-nowrap flex-lg-wrap justify-content-start justify-content-lg-end align-items-start align-items-lg-center w-100 flex-column flex-lg-row mt-4 mt-lg-0 custom-container-info-socials">
+									<ul class="nav nav-pills justify-content-between h-100 mb-4 mb-lg-0">
+										<li class="nav-item d-inline-flex flex-column flex-lg-row">
+											<span class="footer-nav-phone py-2 d-flex align-items-center text-color-secondary font-weight-semibold text-uppercase justify-content-start mb-2 mb-lg-0">
+												<span style="padding: 10px;">
+													<img width="15" height="18" src="img/demos/business-consulting-2/icons/phone.svg" alt="Phone">
+													<a class="font-weight-bold text-color-secondary text-color-hover-primary text-decoration-none" href="index.html">+971 4394 8446 </a>	
+												</span>
+											</span>
+											<span class="footer-nav-email px-0 font-weight-normal d-flex align-items-center justify-content-start mb-2 mb-lg-0">
+												<span style="padding: 10px;">
+													<img width="25" height="18" src="img/demos/business-consulting-2/icons/mail.svg" alt="Mail">
+													<a class="text-color-secondary text-color-hover-primary text-decoration-none" >info@sfgw.ae</a>
+												</span>
+											</span>
+											<!-- <span class="footer-nav-opening-hours px-0 font-weight-normal d-flex align-items-center text-color-secondary justify-content-start mb-2 mb-lg-0">
+												<span>
+													<img width="19" height="18" src="img/demos/business-consulting-2/icons/calendar.svg" alt="Calendar">
+												</span>
+												Mon - Sat 9:00am - 6:00pm / Sunday - CLOSED
+											</span> -->
+										</li>
+									</ul>
+									
+									
+								</div>
+								<nav class="nav-footer w-100 d-none d-lg-block">
+									<ul class="nav nav-pills justify-content-end" id="mainNav">
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="index.html">
+												Home
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="about.html">
+												About
+											</a>
+										</li>
+	<!-- 									
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="HivePro.html">
+												Products
+											</a>
+										</li>
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="ICTSolutions.html">
+												Offerings
+											</a>
+										</li> -->
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Clients.html">
+												Services
+											</a>
+										</li> -->
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="about.html">
+												Portfolio
+											</a>
+										</li>
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Industry.html">
+												Blog
+											</a>
+										</li> -->
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="others.html">
+												Others
+											</a>
+										</li> -->
+										<li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="contact.html">
+												Contact 
+											</a>
+										</li>
+										
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="demo-business-consulting-2-blog.html">
+												Blog
+											</a>
+										</li> -->
+										<!-- <li class="dropdown-secondary">
+											<a class="nav-link text-color-secondary font-weight-bold letter-spacing-05 text-color-hover-primary" href="Contact-us.html">
+												Contact Us
+											</a>
+										</li> -->
+									</ul>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright container mb-3" style="background-color: #F4F9FD;">
+					<div class="row">
+						<div class="col-lg-12 text-center m-0" style="color:black">
+							<!-- <p class="text-color-grey">Porto Business Consulting. ©  2023.  All Rights Reserved</p> -->
+							<span>Developed By : 
+								<a href="https://ascentialabs.com/" style="color: #0C72B8;">
+									<img src="img/Simpra/Ascentia Logo (1).png" alt="AscentiaLabs Logo" style="width: 130px; height: auto;">
+								</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<!-- <footer id="footer" class="footer-reveal bg-color-secondary border-0 mt-0">
+				<div class="container container-xl-custom pt-4 pb-3">
+					<div class="row py-5">
+						<div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+							<h4 class="font-weight-bold ls-0">Our Address</h4>
+							<ul class="list list-unstyled mb-0">
+								<li class="mb-1">
+									12345  Porto Blvd.
+								</li>
+								<li class="mb-1">
+									Suite 1500
+								</li>
+								<li class="mb-0">
+									Los Angeles, California 90000
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-lg-3 mb-4 mb-lg-0">
+							<h4 class="font-weight-bold ls-0">Our Contacts</h4>
+							<div class="feature-box feature-box-style-2 align-items-center mb-3">
+								<div class="feature-box-icon">
+									<img class="icon-animated" width="45" src="img/demos/cleaning-services/icons/phone.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+								</div>
+								<div class="feature-box-info ps-2">
+									<p class="text-uppercase font-weight-semibold line-height-1 text-2 pb-0 mb-0">CALL US NOW</p>
+									<a href="tel:+1234567890" class="text-uppercase text-color-light text-color-hover-secondary text-decoration-none text-5 font-weight-bold pb-0">800-123-4567</a>
+								</div>
+							</div>
+							<a href="demo-cleaning-services-contact.html" class="btn btn-primary font-weight-bold px-5 py-3 mb-2">BOOK NOW</a>
+						</div>
+						<div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+							<h4 class="font-weight-bold ls-0">Our Services</h4>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-1">
+									<a href="demo-cleaning-services-services-detail.html">Building Services</a>
+								</li>
+								<li class="mb-1">
+									<a href="demo-cleaning-services-services-detail.html">Post Construction</a>
+								</li>
+								<li class="mb-0">
+									<a href="demo-cleaning-services-services-detail.html">Office Cleaning</a>
+								</li>
+							</ul>
+							<a href="demo-cleaning-services-services.html" class="btn btn-link font-weight-bold text-decoration-none ps-0">VIEW MORE</a>
+						</div>
+						<div class="col-md-4 col-lg-2 mb-4 mb-md-0">
+							<h4 class="font-weight-bold ls-0">About</h4>
+							<ul class="list-unstyled mb-0">
+								<li class="mb-1">
+									<a href="demo-cleaning-services-about-us.html">About Us</a>
+								</li>
+								<li class="mb-0">
+									<a href="demo-cleaning-services-contact.html">Send a Message</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4 col-lg-2">
+							<h4 class="font-weight-bold ls-0">Follow Us</h4>
+							<ul class="social-icons social-icons-clean social-icons-medium">
+								<li>
+									<a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+								</li>
+								<li>
+									<a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+								</li>
+								<li>
+									<a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright bg-color-secondary">
+					<div class="container container-xl-custom pb-4">
+						<div class="row">
+							<div class="col opacity-3">
+								<hr class="my-0 bg-color-light opacity-1">
+							</div>
+						</div>
+						<div class="row py-4 mt-2">
+							<div class="col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
+								<a href="demo-cleaning-services.html">
+									<img alt="Porto" width="115" height="30" src="img/demos/cleaning-services/logo-light.png">
+								</a>
+							</div>
+							<div class="col-lg-6 text-center text-lg-end">
+								<p class="text-3 mb-0">Porto Cleaning Services. © 2023. All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer> -->
+		</div>
+
+		<!-- Vendor -->
+		<script src="vendor/plugins/js/plugins.min.js"></script>
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="js/theme.js"></script>
+
+		<!-- Demo -->
+		<script src="js/demos/demo-cleaning-services.js"></script>
+
+		<!-- Theme Custom -->
+		<script src="js/custom.js"></script>
+
+		<!-- Theme Initialization Files -->
+		<script src="js/theme.init.js"></script>
+
+	</body>
+</html>

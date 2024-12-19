@@ -1,0 +1,69 @@
+body {
+    font-family: Calibri, Arial, sans-serif;
+}
+
+.text-color-1 {
+    color: #0052CC;
+    font-weight: 700; /* Increase the font-weight value */
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+    .position-absolute {
+        left: 0;
+        top: 20%; /* Adjust vertical position for small screens */
+        transform: translateX(5%) translateY(-10%); /* Adjust Y-axis with translateY */
+    }
+
+    
+}
+
+/* Tablets and small screens */
+@media (min-width: 577px) and (max-width: 768px) {
+    .position-absolute {
+        left: 10%;
+        top: 30%; /* Adjust vertical position for medium screens */
+        transform: translateX(80%) translateY(-40%); /* Adjust Y-axis with translateY */
+    }
+
+    
+}
+
+/* Larger screens */
+@media (min-width: 768px) {
+    .position-absolute {
+        /* right: 30%px; */
+        /* left: 55%; */
+        top: 30%; /* Adjust vertical position for larger screens */
+        transform: translateX(-25%) translateY(-25%); /* Adjust Y-axis with translateY */
+    }
+
+   
+}
+
+
+@media (min-width: 1400px) {
+    .position-absolute {
+        /* right: 30%px; */
+        /* left: 55%; */
+        top: 30%; /* Adjust vertical position for larger screens */
+        transform: translateX(-25%) translateY(-25%); /* Adjust Y-axis with translateY */
+    }
+
+    
+}
+
+
+
+
+
