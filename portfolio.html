@@ -217,7 +217,7 @@ body {
   padding: 10px;
 }
 
-.card {
+/* .card {
   background-color: white;
   color: black;
   border-radius: 8px;
@@ -240,7 +240,13 @@ body {
 .project-title {
   font-size: 1.2em;
   margin: 10px 0;
+  text-align: center;
 }
+
+.lighter{
+	font-size: 0.8em;
+	text-align: center !important;
+} */
 
 .backgd{
   background-image: url('img/Simpra Holding Images/Simpra Holdings Images/Investment Portfolio Header - Simpra Holdings.png');
@@ -259,6 +265,68 @@ body {
   .card-container {
     grid-template-columns: 1fr;
   }
+}
+
+/* From Uiverse.io by Dailleer */ 
+.card {
+  position: relative;
+  width: 320px;
+  height: 260px;
+  background: linear-gradient(-45deg, #ffffff 20%, #6186ad 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-img {
+  padding: 50px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+  font-weight: 700;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover .card-img {
+  scale: 0;
+  transform: rotate(-45deg);
 }
 
 
@@ -361,172 +429,138 @@ body {
     <!-- Card Container -->
     <div class="card-container">
       <!-- Cards -->
+	  <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Hive-pro.png" height="100px" width="180px" alt="">
+        </div>
+        <div class="card__content">
+            <p class="card__title">Hive Pro</p>
+          <p class="card__description">Simpra Holdings proudly spearheads Hive Pro, a unified platform that empowers customers, vendors, and partners to seamlessly deploy, manage, migrate, and monitor Spectrami Security Solutions through a single, intuitive interface. With this cutting-edge solution, Simpra continues to redefine security management, offering unparalleled efficiency and control.</p>
+		  </div>
+      </article>
+
       <article class="card" data-category="Start-Up-Investment">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Rockley.png" height="150px" width="312px" alt="">
-          </div>
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Rockley.png" alt="">
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Rockly Photonics (USA)</div>
-          </div>
-          <span class="lighter">Rockley Photonics is a fabless supplier of silicon photonics chipsets, IP, and custom designs for high-volume optics applications.</span>
+        <div class="card__content">
+            <p class="card__title">Rockly Photonics (USA)</p>
+          <p class="card__description">Rockley Photonics is a fabless supplier of silicon photonics chipsets, IP, and custom designs for high-volume optics applications.</p>
         </div>
       </article>
 
       <article class="card" data-category="Start-Up-Investment">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/astrocast.png" height="150px" width="315px" alt="">
-          </div>
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/astrocast.png" alt="">
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Astrocast (SA)</div>
-          </div>
-          <span class="lighter">Switzerland Astrocast is a constellation of nanosatellites dedicated to the Internet of Things (IoT) and Machine to Machine communication (M2M). </span>
+        <div class="card__content">
+            <p class="card__title">Astrocast (SA)</p>
+          <p class="card__description">Switzerland Astrocast is a constellation of nanosatellites dedicated to the Internet of Things (IoT) and Machine to Machine communication (M2M). </p>
         </div>
       </article>
 
       <article class="card" data-category="Start-Up-Investment">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/axis.png" height="150px" width="315px" alt="">
-          </div>
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/axis.png" alt="">
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Axis Energy (Australia)</div>
-          </div>
-          <span class="lighter">Axis Energy Group is delivering cost-effective renewable energy solutions to help create a better, cleaner world.</span>
-        </div>
-      </article>
-      <article class="card" data-category="Start-Up-Investment">
-        <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/booqu.png" height="150px" width="315px" alt="">
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Instadeal (Booqu) (USA)</div>
-          </div>
-          <span class="lighter">The first online concierge that uses artificial intelligence to find and book local services.</span>
+        <div class="card__content">
+            <p class="card__title">Axis Energy (Australia)</p>
+          <p class="card__description">Axis Energy Group is delivering cost-effective renewable energy solutions to help create a better, cleaner world.</p>
         </div>
       </article>
 
-      <article class="card" data-category="Companies-In-UAE">
+      <article class="card" data-category="Start-Up-Investment">
         <div class="card-img">
-          <div class="card-imgs">
-          <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" height="150px" width="315px" alt="">  
-          </div>
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/booqu.png" alt="">
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Altro Smart INC (USA)</div>
-          </div>
-          <span class="lighter">The Next Generation Smart Lock redefining the home security market.
-        </span>
+        <div class="card__content">
+            <p class="card__title">Instadeal (Booqu) (USA)</p>
+          <p class="card__description">The first online concierge that uses artificial intelligence to find and book local services.</p>
         </div>
       </article>
 
       <article class="card" data-category="Start Up Investment">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/amiseq.png" height="150px" width="315px" alt="">  
+          <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" alt="">  
           </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Amiseq INC (USA)</div>
-          </div>
-          <span class="lighter">Leader In Cyber Security. Amiseq provides various services for augmenting defense including managed perimeter, core endpoint and cloud security.
-        </span>
+        <div class="card__content">
+            <p class="card__title">Altro Smart INC (USA)</p>
+          <p class="card__description">The Next Generation Smart Lock redefining the home security market.</p>
         </div>
       </article>
-      <article class="card" data-category="Companies-In-UAE">
-        <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/demas-logo.png" height="150px" width="315px" alt="">  
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Demas Machinery & Equipment Rental LLC </div>
-          </div>
-          <span class="lighter">Demas Machinery & Equipment Rental LLC is a company based in Dubai (UAE) specialized in the demolition sector, owned and managed by an Italian team of professionals undertaking Controlled Demolitions, Excavations and Special Equipment rentals.
-        </span>
-        </div>
-      </article>
-      <article class="card" data-category="Companies-In-UAE">
-        <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/nirvatech-logo.png" height="150px" width="315px" alt="">  
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Nirvatech Measuring and Control Systems LLC</div>
-          </div>
-          <span class="lighter">NirvaTech (www.nirvatech.com) offers a diverse range of engineered products, including customized compressed air and gas solutions, nitrogen and oxygen generators, gas analyzer systems, industrial gearboxes, and genuine parts with reliable services for top air compressor brands.
-        </span>
-        </div>
-      </article>
-      <article class="card" data-category="Companies-In-UAE">
-        <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/daalchini.jpg" height="150px" width="315px" alt="">  
-          </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Daalchini (UAE)</div>
-          </div>
-          <span class="lighter">Part of Simpra Holdings' diverse portfolio, Daalchini brings the rich and authentic flavors of Indian cuisine to the different spots in UAE (Century Village - UAE, World Trade Center - UAE, Al Khuwair - Muscat Oman, & Al Hail - Muscat Oman) offering a delightful culinary experience for food lovers. 
-        </span>
-        </div>
-      </article>
+
       <article class="card" data-category="Start Up Investment">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" height="150px" width="315px" alt="">  
-          </div>
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/amiseq.png" alt="">  
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Shanghai Station (UAE)</div>
-          </div>
-          <span class="lighter">Shanghai Station, a culinary gem under Simpra Holdings, brings authentic Chinese flavors to life with its signature selection of soups, dim sum, and traditional dishes. Located at The Greens, Dubai, UAE, and DMCC JLT, Dubai, UAE, it offers a dining experience that embodies the essence of Chinese cuisine. 
-        </span>
+        <div class="card__content">
+            <p class="card__title">Amiseq INC (USA)</p>
+          <p class="card__description">Leader In Cyber Security. Amiseq provides various services for augmenting defense including managed perimeter, core endpoint and cloud security.
+		  </p>
         </div>
       </article>
+
       <article class="card" data-category="Companies-In-UAE">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Poke & Co.jpg" height="150px" width="315px" alt="">  
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/demas-logo.png" alt="">  
           </div>
-        </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Poke & Co (UAE)</div>
-          </div>
-          <span class="lighter">Poke & Co, a proud addition to Simpra Holdings' portfolio, serves the best poke bowls in the UAE. Operating through its innovative dark kitchen model, it brings fresh, flavorful experiences to food lovers across the region. 
-        </span>
+        <div class="card__content">
+            <p class="card__title">Demas Machinery & Equipment Rental LLC </p>
+          <p class="card__description">Demas Machinery & Equipment Rental LLC is a company based in Dubai (UAE) specialized in the demolition sector, owned and managed by an Italian team of professionals undertaking Controlled Demolitions, Excavations and Special Equipment rentals.</p>
         </div>
       </article>
+
       <article class="card" data-category="Companies-In-UAE">
         <div class="card-img">
-          <div class="card-imgs">
-            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/gugo.png" height="150px" width="315px" alt="">  
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/nirvatech-logo.png" alt="">  
           </div>
+        <div class="card__content">
+            <p class="project-title">Nirvatech Measuring and Control Systems LLC</p>
+          <p class="card__description">NirvaTech (www.nirvatech.com) offers a diverse range of engineered products, including customized compressed air and gas solutions, nitrogen and oxygen generators, gas analyzer systems, industrial gearboxes, and genuine parts with reliable services for top air compressor brands.</p>
         </div>
-        <div class="project-info">
-          <div class="flex">
-            <div class="project-title">Yugo Sushi</div>
-          </div>
-          <span class="lighter">Yugo Sushi, part of Simpra Holdings' portfolio, is a Japanese restaurant with locations in Emaar Business Park and Al Mass Tower, DMCC JLT. Inspired by the Japanese concept of "Yugo" (fusion), it reimagines traditional recipes with a modern twist, offering a unique and delightful dining experience. 
-        </span>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/daalchini.jpg" alt="">  
+        </div>
+        <div class="card__content">
+            <p class="card__title">Daalchini (UAE)</p>
+          <p class="card__description">Part of Simpra Holdings' diverse portfolio, Daalchini brings the rich and authentic flavors of Indian cuisine to the different spots in UAE (Century Village - UAE, World Trade Center - UAE, Al Khuwair - Muscat Oman, & Al Hail - Muscat Oman) offering a delightful culinary experience for food lovers. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Shanghai.jpg" alt="">  
+        </div>
+        <div class="card__content">
+            <p class="card__title">Shanghai Station (UAE)</p>
+          <p class="card__description">Shanghai Station, a culinary gem under Simpra Holdings, brings authentic Chinese flavors to life with its signature selection of soups, dim sum, and traditional dishes. Located at The Greens, Dubai, UAE, and DMCC JLT, Dubai, UAE, it offers a dining experience that embodies the essence of Chinese cuisine. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Poke & Co.jpg" alt="">  
+        </div>
+        <div class="card__content">
+            <p class="card__title">Poke & Co (UAE)</p>
+          <p class="card__description">Poke & Co, a proud addition to Simpra Holdings' portfolio, serves the best poke bowls in the UAE. Operating through its innovative dark kitchen model, it brings fresh, flavorful experiences to food lovers across the region. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/gugo.png" alt="">  
+        </div>
+        <div class="card__content">
+            <p class="card__title">Yugo Sushi</p>
+          <p class="card__description">Yugo Sushi, part of Simpra Holdings' portfolio, is a Japanese restaurant with locations in Emaar Business Park and Al Mass Tower, DMCC JLT. Inspired by the Japanese concept of "Yugo" (fusion), it reimagines traditional recipes with a modern twist, offering a unique and delightful dining experience. 
+		  </p>
         </div>
       </article>
     </div>
