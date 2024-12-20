@@ -48,6 +48,80 @@
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
+		<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+<style>
+	@media screen and (max-width: 768px) {
+  #footer {
+    padding: 20px 10px !important;
+  }
+
+  .footer-column {
+    margin-bottom: 20px !important;
+  }
+
+  .custom-row-footer {
+    flex-direction: column !important; /* Stack rows */
+  }
+
+  .custom-footer-column-logo {
+    align-items: center !important; /* Center align logo and text */
+    text-align: center !important;
+  }
+
+  .custom-footer-column-logo img {
+    margin-bottom: 10px !important;
+    width: 100px !important; /* Adjust logo size */
+    height: auto !important;
+  }
+
+  .custom-footer-column-logo p {
+    width: auto !important; /* Let text flow naturally */
+    font-size: 14px !important;
+  }
+
+  .custom-container-info-socials {
+    flex-direction: column !important; /* Stack social info */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-nav-phone,
+  .footer-nav-email {
+    flex-direction: column !important; /* Stack phone and email */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-nav-phone img,
+  .footer-nav-email img {
+    margin-right: 0 !important;
+    margin-bottom: 5px !important;
+  }
+
+  .nav-footer {
+    text-align: center !important; /* Center align footer navigation */
+    margin-top: 20px !important;
+  }
+
+  .nav-footer ul {
+    flex-direction: column !important; /* Stack navigation links */
+    /* gap: 10px !important; */
+  }
+
+  .footer-copyright {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .footer-copyright span img {
+    width: 100px !important; /* Adjust logo size */
+  }
+}
+</style>
+
 	</head>
 	<body>
 
@@ -186,7 +260,7 @@
 					</div>
 					<div class="row pb-5 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">
 						<div class="col">
-							<form class="contact-form custom-form-style-1" action="php/contact-form.php" method="POST">
+							<form class="contact-form custom-form-style-1" id="contact-form" method="POST">
                                 <div class="contact-form-success alert alert-success d-none mt-4">
                                     <strong>Success!</strong> Your message has been sent to us.
                                 </div>
@@ -219,7 +293,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-0 d-flex justify-content-center">
-                                        <button type="submit" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">SEND MESSAGE</button>
+                                        <button type="submit" onclick="sendForm()" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">SEND MESSAGE</button>
                                     </div>
                                 </div>
                             </form>
@@ -368,6 +442,8 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 		<script>
 
+			
+
 			/*
 			Map Settings
 
@@ -438,6 +514,39 @@
 			}
 
 		</script>
+		<!-- testing contact-form -->
+		<script type="text/javascript">
+			emailjs.init("CW-Njv0Fhg1wZ97EB"); 
+		  
+			function sendForm() {
+				// Pre
+				const form = document.getElementById('contact-form');
+				if (!form) {
+					console.error("Form element not found!");
+					return;
+				}
+		  
+				// Collect form data manually into a params object
+				const params = {
+					name: form.name.value,
+					message:form.message.value,
+					email: form.email.value,
+					phone: form.phone.value,
+					subject: form.subject.value,
+					// message: form.message.value,
+				};
+		  
+				// Use EmailJS to send the params object
+				emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
+				// console.log(params)
+					.then(function(response) {
+						console.log("Success:", response);
+						console.log(params);
+						// Show success message
+						document.querySelector(".contact-form-success").classList.remove("d-none");
+					}, );
+			}
+		  </script>
 
 	</body>
 </html>

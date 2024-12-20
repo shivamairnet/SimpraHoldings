@@ -349,6 +349,83 @@ body {
   transform: rotate(-45deg);
 }
 
+@media(max-width:769px)
+{
+   .investment-section{
+	text-align: center !important;
+	padding: 10px !important;
+	margin: 10px !important;
+   }
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+  #footer {
+    padding: 20px 10px !important;
+  }
+
+  .footer-column {
+    margin-bottom: 20px !important;
+  }
+
+  .custom-row-footer {
+    flex-direction: column !important; /* Stack rows */
+  }
+
+  .custom-footer-column-logo {
+    align-items: center !important; /* Center align logo and text */
+    text-align: center !important;
+  }
+
+  .custom-footer-column-logo img {
+    margin-bottom: 10px !important;
+    width: 100px !important; /* Adjust logo size */
+    height: auto !important;
+  }
+
+  .custom-footer-column-logo p {
+    width: auto !important; /* Let text flow naturally */
+    font-size: 14px !important;
+  }
+
+  .custom-container-info-socials {
+    flex-direction: column !important; /* Stack social info */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-nav-phone,
+  .footer-nav-email {
+    flex-direction: column !important; /* Stack phone and email */
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .footer-nav-phone img,
+  .footer-nav-email img {
+    margin-right: 0 !important;
+    margin-bottom: 5px !important;
+  }
+
+  .nav-footer {
+    text-align: center !important; /* Center align footer navigation */
+    margin-top: 20px !important;
+  }
+
+  .nav-footer ul {
+    flex-direction: column !important; /* Stack navigation links */
+    /* gap: 10px !important; */
+  }
+
+  .footer-copyright {
+    padding: 10px !important;
+    font-size: 12px !important;
+  }
+
+  .footer-copyright span img {
+    width: 100px !important; /* Adjust logo size */
+  }
+}
 
 			
 		</style>
@@ -384,11 +461,11 @@ body {
 												<li><a href="index.html"
 														class="nav-link">Home</a></li>
 												<li><a href="about.html"
-														class="nav-link active">About Us</a></li>
+														class="nav-link">About Us</a></li>
 												<!-- <li><a href="demo-cleaning-services-services.html"
 														class="nav-link">Services</a></li> -->
 												<li><a href="portfolio.html"
-														class="nav-link">Portfolio</a></li>
+														class="nav-link active">Portfolio</a></li>
 												<!-- <li><a href="demo-cleaning-services-blog.html" class="nav-link">Blog</a>
 												</li> -->
 												<li><a href="contact.html"
@@ -422,11 +499,10 @@ body {
 
 			<div role="main" class="main">
 
-				<div class="container my-5 pb-0 backgd">
+				<div class="container mb-5 pb-0 backgd">
                     <section style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;">
-                        <div style="padding: 20px; border-radius: 8px; min-width: 300px;text-align: center;">
-                          <h2 class="appear-animation" style="margin-top: 35px; font-size: 44px; color:white;font-weight: 700;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
-						  <p class="appear-animation" style="margin-top: 0; font-size: 1.2rem; color: white;line-height: 1.95rem;font-weight: 500;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
+                        <div style="padding: 20px; border-radius: 8px; min-width: 300px;text-align: center !important;">
+                          <h2 class="appear-animation" style="margin-top: 35px; font-size: 44px; color:white;font-weight: 700;text-align: center !important;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
 						</div>
                       </section>
 				</div>
@@ -434,6 +510,8 @@ body {
 				<div class="divider divider-small divider-small-lg text-center appear-animation d-flex justify-content-center " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0" style="margin-top:-35px;">
 					<hr class="border-radius" style="background-color: #0052CC;">
 				</div>
+				<p class="investment-section appear-animation text-center" style="margin-top: 50px;margin-bottom: 30px; font-size: 1.2rem; color: black;line-height: 1.95rem;font-weight: 500;padding-left: 100px;padding-right: 100px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
+
 
   <section class="button-card-section">
     <!-- Filter Buttons -->
@@ -461,7 +539,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Rockley.png" alt="" height="100px" width="250px">
         </div>
         <div class="card__content">
-            <p class="card__title">Rockly Photonics (USA)</p>
+            <p class="card__title" style="margin-top: 55px;">Rockly Photonics (USA)</p>
           <p class="card__description">Rockley Photonics is a fabless supplier of silicon photonics chipsets, IP, and custom designs for high-volume optics applications.</p>
         </div>
       </article>
@@ -471,7 +549,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/astrocast.png" alt="" height="100px" width="250px">
         </div>
         <div class="card__content">
-            <p class="card__title">Astrocast (SA)</p>
+            <p class="card__title" style="margin-top: 55px;">Astrocast (SA)</p>
           <p class="card__description">Switzerland Astrocast is a constellation of nanosatellites dedicated to the Internet of Things (IoT) and Machine to Machine communication (M2M). </p>
         </div>
       </article>
@@ -481,7 +559,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/axis.png" alt="" height="100px" width="250px">
         </div>
         <div class="card__content">
-            <p class="card__title">Axis Energy (Australia)</p>
+            <p class="card__title" style="margin-top: 60px;">Axis Energy (Australia)</p>
           <p class="card__description">Axis Energy Group is delivering cost-effective renewable energy solutions to help create a better, cleaner world.</p>
         </div>
       </article>
@@ -491,7 +569,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/booqu.png" alt="" height="100px" width="250px">
         </div>
         <div class="card__content">
-            <p class="card__title">Instadeal (Booqu) (USA)</p>
+            <p class="card__title" style="margin-top: 60px;">Instadeal (Booqu) (USA)</p>
           <p class="card__description">The first online concierge that uses artificial intelligence to find and book local services.</p>
         </div>
       </article>
@@ -501,7 +579,7 @@ body {
           <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" alt="" height="100px" width="250px">  
           </div>
         <div class="card__content">
-            <p class="card__title">Altro Smart INC (USA)</p>
+            <p class="card__title" style="margin-top: 60px;">Altro Smart INC (USA)</p>
           <p class="card__description">The Next Generation Smart Lock redefining the home security market.</p>
         </div>
       </article>
@@ -511,7 +589,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/amiseq.png" alt="" height="100px" width="250px">  
         </div>
         <div class="card__content">
-            <p class="card__title">Amiseq INC (USA)</p>
+            <p class="card__title" style="margin-top: 55px;" >Amiseq INC (USA)</p>
           <p class="card__description">Leader In Cyber Security. Amiseq provides various services for augmenting defense including managed perimeter, core endpoint and cloud security.
 		  </p>
         </div>
@@ -522,7 +600,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/demas-logo.png" alt="" height="100px" width="250px">  
           </div>
         <div class="card__content">
-            <p class="card__title">Demas Machinery & Equipment Rental LLC </p>
+            <p class="card__title" style="margin-top: 10px;">Demas Machinery & Equipment Rental LLC </p>
           <p class="card__description">Demas Machinery & Equipment Rental LLC is a company based in Dubai (UAE) specialized in the demolition sector, owned and managed by an Italian team of professionals undertaking Controlled Demolitions, Excavations and Special Equipment rentals.</p>
         </div>
       </article>
@@ -542,7 +620,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/daalchini.jpg" alt="" height="100px" width="250px">  
         </div>
         <div class="card__content">
-            <p class="card__title">Daalchini (UAE)</p>
+            <p class="card__title" style="margin-top: 15px;">Daalchini (UAE)</p>
           <p class="card__description">Part of Simpra Holdings' diverse portfolio, Daalchini brings the rich and authentic flavors of Indian cuisine to the different spots in UAE (Century Village - UAE, World Trade Center - UAE, Al Khuwair - Muscat Oman, & Al Hail - Muscat Oman) offering a delightful culinary experience for food lovers. 
 		  </p>
         </div>
@@ -553,7 +631,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Shanghai.jpg" alt="" height="100px" width="250px">  
         </div>
         <div class="card__content">
-            <p class="card__title">Shanghai Station (UAE)</p>
+            <p class="card__title" style="margin-top: 15px;">Shanghai Station (UAE)</p>
           <p class="card__description">Shanghai Station, a culinary gem under Simpra Holdings, brings authentic Chinese flavors to life with its signature selection of soups, dim sum, and traditional dishes. Located at The Greens, Dubai, UAE, and DMCC JLT, Dubai, UAE, it offers a dining experience that embodies the essence of Chinese cuisine. 
 		  </p>
         </div>
@@ -564,7 +642,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Poke & Co.jpg" alt="" height="100px" width="250px">  
         </div>
         <div class="card__content">
-            <p class="card__title">Poke & Co (UAE)</p>
+            <p class="card__title" style="margin-top: 40px;">Poke & Co (UAE)</p>
           <p class="card__description">Poke & Co, a proud addition to Simpra Holdings' portfolio, serves the best poke bowls in the UAE. Operating through its innovative dark kitchen model, it brings fresh, flavorful experiences to food lovers across the region. 
 		  </p>
         </div>
@@ -575,7 +653,7 @@ body {
             <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/gugo.png" alt="" height="100px" width="250px">  
         </div>
         <div class="card__content">
-            <p class="card__title">Yugo Sushi</p>
+            <p class="card__title"style="margin-top: 10px;">Yugo Sushi</p>
           <p class="card__description">Yugo Sushi, part of Simpra Holdings' portfolio, is a Japanese restaurant with locations in Emaar Business Park and Al Mass Tower, DMCC JLT. Inspired by the Japanese concept of "Yugo" (fusion), it reimagines traditional recipes with a modern twist, offering a unique and delightful dining experience. 
 		  </p>
         </div>
