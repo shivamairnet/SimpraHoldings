@@ -169,39 +169,196 @@
 			}
 }
 
+/* cards css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.button-card-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  background-color: #2c79cb;
+  color: white;
+  border: none;
+  width: 180px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #0056b3;
+}
+
+.filter-btn.active{
+    background-color: hwb(27 24% 4%);
+    color: black;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 10px;
+}
+
+/* .card {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  padding: 20px;
+  height: 450px;
+
+}
+
+.card-img div {
+  background-color: white;
+  height: 150px;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.project-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.lighter{
+	font-size: 0.8em;
+	text-align: center !important;
+} */
+
 .backgd{
-  background-image: url('img/Simpra Holding Images/Simpra Holdings Images/About-uss.jpg');
+  background-image: url('img/Simpra Holding Images/Simpra Holdings Images/Investment Portfolio Header - Simpra Holdings.png');
   background-size: cover; /* Ensures the image covers the div */
   background-position: center; /* Centers the image */
-  padding-left: 60px;
-  padding-right: 60px;
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: auto;
-  min-height: 220px;
-
 }
 
-@media (max-width:769px)
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* From Uiverse.io by Dailleer */ 
+.card {
+  position: relative;
+  width: 320px;
+  height: 260px;
+  background: white;
+  /* background: linear-gradient(-45deg, #ffffff 20%, #6186ad 100%); */
+  border-radius: 10px;
+  border-color: #0056b3;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* .card-img {
+  padding: 50px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+} */
+
+.card-img {
+  height: 100%; /* Adjust container height */
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  padding: 20px; /* Optional padding for spacing */
+  overflow: hidden; /* To handle image overflow */
+}
+
+.card-img img {
+  max-width: 100%; /* Ensure the image fits within the card */
+  /* max-height: 20%; Reduce the image height */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #426cc1;
+  color: white;
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card:hover .card__content {
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  color:white;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card__description {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: white;
+  line-height: 1.4;
+}
+
+.card:hover .card-img {
+  scale: 0;
+  transform: rotate(-45deg);
+}
+
+@media(max-width:769px)
 {
-	.vision-section{
+   .investment-section{
 	text-align: center !important;
-	padding: 6px !important;
-	margin: 4px !important;
+	padding: 10px !important;
+	margin: 10px !important;
+   }
 }
 
-.vision-sectionul{
-	padding:12px !important;
-}
-
-.about-usimage{
-margin: 0 auto !important;
-object-fit: contain !important;
-width: 100% !important;
-height: auto !important;
-}
-
-}
-
+/* Media Query for Mobile */
 @media screen and (max-width: 768px) {
   #footer {
     padding: 20px 10px !important;
@@ -270,26 +427,6 @@ height: auto !important;
   }
 }
 
-@media (max-width: 768px) {
-  .backgd {
-    background-size: contain !important; /* Maintain cover property */
-    background-position: center !important; /* Center the image */
-    padding-left: 20px !important; /* Reduce padding for smaller screens */
-    padding-right: 20px !important; /* Reduce padding for smaller screens */
-    min-height: 150px !important; /* Adjust the height for smaller screens */
-  }
-
-  .page-header {
-    width: 100% !important; /* Ensure the section width adapts to the screen */
-    padding: 10px !important; /* Add consistent padding */
-	background-color: white !important;
-  }
-
-  .page-header h1 {
-    font-size: 24px !important; /* Scale down the font size */
-  }
-}
-
 			
 		</style>
 	</head>
@@ -324,11 +461,11 @@ height: auto !important;
 												<li><a href="index.html"
 														class="nav-link">Home</a></li>
 												<li><a href="about.html"
-														class="nav-link active">About Us</a></li>
+														class="nav-link">About Us</a></li>
 												<!-- <li><a href="demo-cleaning-services-services.html"
 														class="nav-link">Services</a></li> -->
 												<li><a href="portfolio.html"
-														class="nav-link">Portfolio</a></li>
+														class="nav-link active">Portfolio</a></li>
 												<!-- <li><a href="demo-cleaning-services-blog.html" class="nav-link">Blog</a>
 												</li> -->
 												<li><a href="contact.html"
@@ -362,140 +499,213 @@ height: auto !important;
 
 			<div role="main" class="main">
 
-				<section class="page-header page-header-modern page-header-lg border-0 my-0 px-5 py-5 backgd" style="width: 1200px; margin: 0 auto;padding: auto;">
-					<div class="container my-5 px-5">
-						<div class="row">
-							<div class="col-md-12 align-self-center p-static order-2 text-center">
-								<h1 class="font-weight-bold text-10" style="color: black;">About Us</h1>
-							</div>
-							
+				<div class="container mb-5 pb-0 backgd">
+                    <section style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto;">
+                        <div style="padding: 20px; border-radius: 8px; min-width: 300px;text-align: center !important;">
+                          <h2 class="appear-animation" style="margin-top: 35px; font-size: 44px; color:white;font-weight: 700;text-align: center !important;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
 						</div>
-					</div>
-				</section>
-
-				<div class="container my-5 pb-0">
-					<div class="row align-items-center mb-4">
-						<div class="col-lg-5 mb-0 mb-lg-5 mb-lg-0 order-1 custom-margin1">
-							<div class="d-flex align-items-center mb-2">
-								<span class="custom-line appear-animation" data-appear-animation="customLineAnimation" data-appear-animation-delay="1200" appear-animation-duration="1s"></span>
-								<div class="overflow-hidden ms-3">
-									<h2 class="text-color-primary font-weight-semibold line-height-3 text-4 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="2200">WHO WE ARE</h2>
-								</div>
-							</div>
-							<h3 class="text-color-dark font-weight-bold text-transform-none line-height-2 text-10 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">
-								Creating Fortunes with Purpose: 
-					            Transforming the World for a Better Tomorrow
-							</h3>
-						</div>
-						<div class="col-lg-5 mb-0 mb-lg-5 mb-lg-0 order-3 text-center text-lg-start custom-margin2">
-							<p class="custom-font-secondary text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2600"> Simpra Holdings Limited is an investment firm dedicated to creating fortunes while improving the world. With over 75 years of collective experience, our team provides not just capital but also valuable insights to help our partners achieve success beyond traditional capital infusion. We focus on small to medium-cap investments in ventures with proven concepts, particularly those creating niche markets or expanding traditional ones.</p>
-							<p class="custom-font-secondary text-4 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2800">Founded by industry veterans, Simpra Holdings is a RAK ICC (Offshore) Company with a global investment footprint. Our current portfolio includes companies in sectors such as Infotech, IoT, Renewable Energy, F&B, Security, and Construction. </p>
-						</div>
-						<div class="col-sm-10 col-lg-5 offset-sm-1  ps-lg-0 order-2 mt-3 mt-lg-0 custom-margin3">
-							<div class="position-relative">
-								<div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.2, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-									<div class="mb-4 mb-lg-0 rounded-circle custom-box-shadow-1 appear-animation ano-custom" 
-									data-appear-animation="fadeInLeftShorter" 
-									data-appear-animation-delay="2600" 
-									style="background-color: #0052CC;">
-							   </div>								
-							</div>
-								<div class="about-usimage position-absolute top-50pct left-50pct transform3dxy-n50" style="left: 24%;">
-									<div data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 0.3, 'transition': true, 'transitionDuration': 1000, 'isInsideSVG': true}">
-										<img src="img/Simpra Holding Images/Simpra Holdings Images/Who We Are.png" class="img-fluid rounded-circle custom-box-shadow-1 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="2200" alt="" />
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			
-				<div class="container my-5 pb-0">
-					<div class="row align-items-center mb-4">
-						<!-- <span class="custom-line appear-animation" data-appear-animation="customLineAnimation" data-appear-animation-delay="1200" appear-animation-duration="1s"></span> -->
-						<div class="col-lg-12 mb-0 mb-lg-5 mb-lg-0 order-1">
-							<div class="d-flex align-items-center mb-2">
-								<div class="vision-section overflow-hidden ms-3 text-center">
-									<span class="custom-line appear-animation" data-appear-animation="customLineAnimation" data-appear-animation-delay="1200" appear-animation-duration="1s"></span>
-									<p class="vision-section text-color-primary font-weight-semibold line-height-4 text-7 mb-0 appear-animation" data-appear-animation="maskRight" data-appear-animation-delay="200"><span class="mb-5">The Visionary Behind Simpra Holdings Limited : HARMEET SINGH</span>   
-									</p>
-									<p class="vision-section font-weight-medium line-height-3 text-5 mt-2 text-black">Founder and Managing Director Simpra Holdings Limited </p>
-									<p class="vision-section custom-font-secondary text-4 mb-4 appear-animation px-5" style="text-align: left;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600"> An innovative thinker with pragmatic vision, calculated risk taker, believes in start-ups success stories. 
-										30 years of proven experience in building successful business models, creating winning teams and core competencies resulting self-sustaining revenue models. 
-										<br><br>Started my entrepreneur stint by Founding Simpra Holdings Limited in 2016. SHL companies offer Information Technology Systems Integration services for Telecom and Govt, Cyber Security across verticals, Law Enforcement Solutions in Middle East, India, and USA.</p>
-
-										<ul class="vision-section custom-font-secondary text-4 mb-4 appear-animation px-5" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" style="text-align: left !important;">
-											<li class="vision-sectionul">Simpra International DMCC (Managing Director), IT Systems Integration in UAE.</li>
-											<li class="vision-sectionul">Simpra Advanced Technologies LLC (Managing Director), IT Systems Integration in Oman.</li>
-											<li class="vision-sectionul">Altrosmart INC USA (Co-Founder, Director, Patents Holder), World First Integrated SmartLock with Video Doorbell. Among top 15 Innovations of 2018 (CES, Las Vegas)</li>
-											<li class="vision-sectionul">Amiseq Inc USA (Director), Cybersecurity Services.</li>
-											<li class="vision-sectionul">Amiviz DMCC (Director), Enterprise Market Place</li>
-											<li class="vision-sectionul">Hive Pro Inc USA (Director), AI Based Cybersecurity Algorithms Offering.</li>
-										</ul>
-									<p class="vision-section custom-font-secondary text-4 mb-4 appear-animation px-5" style="text-align: left;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600">	SHL subsidiary Simpra Capital Limited (Chairman), a DIFC based Cat4 License entity offer bespoke finance / investments solutions and also manages SHL investment portfolio under Simpra Limited (Director).  
-<br><br>The key investments promoted by the SHL group in its portfolio include Rockley Photonics USA, Astrocast Switzerland, Axis Energy Group Australia (Pathion Holdings Inc.), Instadeal USA, Altrosmart USA, Amiseq (USA & India), Hive Pro Inc (USA) and CARVING FUTURES PRIVATE LIMITED - Moms Belief, Singapore. These investments in various sectors are at different stages of business cycles including seed, pre-money, venture and growth capital.
-<br><br>SHL has a home-grown food & beverage Brand “Simpra Foods” which offers Indian, Japanese’s, Indo Chinese and Peruvian cuisines in middle east. Total 9 restaurants as of date in UAE and Oman with plans to expand in Doha, London & SFO. 
-										   
-											 </p>
-								</div>
-							</div>
-						</div>
-					</div>
+                      </section>
 				</div>
 
-
-				<div class="container pb-2 mb-5">
-					<div class="row justify-content-center pb-2 mb-3">
-						<div class="col-md-9 col-lg-12 text-center">
-							<h2 class="text-color-dark font-weight-bold line-height-6 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"> Strategic Vision</h2>
-							<!-- <p class="custom-font-secondary text-4 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultri.</p> -->
-						</div>
-					</div>
-					<div class="row appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-						<div class="col">
-							<div class="owl-carousel nav-outside nav-arrows-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
-								<div>
-									<div class="card custom-card-style-1 custom-card-style-1-variation" style="height: 280px;">
-										<div class="card-body text-center bg-color-light-scale-1  py-5">
-											<h4 class="text-color-dark font-weight-bold line-height-1 text-8 mb-2">Our Vision</h4>
-											<!-- <p class="custom-font-secondary text-4 mb-4">Foundation</p> -->
-											<p class="mb-0 mt-5">Our vision shapes our investment strategies and partner relationships, reflecting the spirit of our founders and serving as a guiding compass for our future.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="card custom-card-style-1 custom-card-style-1-variation" style="height: 280px;">
-										<div class="card-body text-center bg-color-light-scale-1 py-5">
-											<h4 class="text-color-dark font-weight-bold line-height-1 text-8 mb-2">Our Approach</h4>
-											<!-- <p class="custom-font-secondary text-4 mb-4">30+ Employes</p> -->
-											<p class="mb-0 mt-5"> Our approach is to align with pragmatic talent capable of creating new brands, while remaining open to non-traditional VC funding options.
-											</p>
-										</div>
-									</div>
-								</div>
-								<div>
-									<div class="card custom-card-style-1 custom-card-style-1-variation" style="height: 280px;">
-										<div class="card-body text-center bg-color-light-scale-1 py-lg-4 py-xl-5">
-											<h4 class="text-color-dark font-weight-bold line-height-1 text-8 mb-1"> Empowering Success</h4>
-											<!-- <p class="custom-font-secondary text-4 mb-4">New Office</p> -->
-											<p class="mb-0 mt-lg-4 mt-xl-5"> We offer more than just capital. We provide knowledge, guidance, and a collaborative approach to help our partners succeed and accelerate their path from early-stage growth to market leader.</p>
-										</div>
-									</div>
-								</div>
-								<!-- <div>
-									<div class="card custom-card-style-1 custom-card-style-1-variation">
-										<div class="card-body text-center bg-color-light-scale-1 py-5">
-											<h4 class="text-color-secondary font-weight-bold line-height-1 text-8 mb-2">2020</h4>
-											<p class="custom-font-secondary text-4 mb-4">100+ Employes</p>
-											<p class="mb-0">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p>
-										</div>
-									</div>
-								</div> -->
-							</div>
-						</div>
-					</div>
+				<div class="divider divider-small divider-small-lg text-center appear-animation d-flex justify-content-center " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0" style="margin-top:-35px;">
+					<hr class="border-radius" style="background-color: #0052CC;">
 				</div>
+				<p class="investment-section appear-animation text-center" style="margin-top: 50px;margin-bottom: 30px; font-size: 1.2rem; color: black;line-height: 1.95rem;font-weight: 500;padding-left: 100px;padding-right: 100px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
+
+
+  <section class="button-card-section">
+    <!-- Filter Buttons -->
+    <div class="button-container" style="margin-top: 10px;margin-bottom: 50px;">
+      <button class="filter-btn active" data-category="All">All</button>
+      <button class="filter-btn" data-category="Start-Up-Investment">Start Up Investment</button>
+      <button class="filter-btn" data-category="Companies-In-UAE">Companies In UAE</button>
+    </div>
+
+    <!-- Card Container -->
+    <div class="card-container">
+      <!-- Cards -->
+	  <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Hive-pro.png" height="100px" width="250px" alt="">
+		</div>
+        <div class="card__content">
+			<p class="card__title">Hive Pro</p>
+          <p class="card__description">Simpra Holdings proudly spearheads Hive Pro, a unified platform that empowers customers, vendors, and partners to seamlessly deploy, manage, migrate, and monitor Spectrami Security Solutions through a single, intuitive interface. With this cutting-edge solution, Simpra continues to redefine security management, offering unparalleled efficiency and control.</p>
+		  </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Rockley.png" alt="" height="100px" width="250px">
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 55px;">Rockly Photonics (USA)</p>
+          <p class="card__description">Rockley Photonics is a fabless supplier of silicon photonics chipsets, IP, and custom designs for high-volume optics applications.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/astrocast.png" alt="" height="100px" width="250px">
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 55px;">Astrocast (SA)</p>
+          <p class="card__description">Switzerland Astrocast is a constellation of nanosatellites dedicated to the Internet of Things (IoT) and Machine to Machine communication (M2M). </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/axis.png" alt="" height="100px" width="250px">
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 60px;">Axis Energy (Australia)</p>
+          <p class="card__description">Axis Energy Group is delivering cost-effective renewable energy solutions to help create a better, cleaner world.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start-Up-Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/booqu.png" alt="" height="100px" width="250px">
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 60px;">Instadeal (Booqu) (USA)</p>
+          <p class="card__description">The first online concierge that uses artificial intelligence to find and book local services.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+          <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/altro.png" alt="" height="100px" width="250px">  
+          </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 60px;">Altro Smart INC (USA)</p>
+          <p class="card__description">The Next Generation Smart Lock redefining the home security market.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/amiseq.png" alt="" height="100px" width="250px">  
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 55px;" >Amiseq INC (USA)</p>
+          <p class="card__description">Leader In Cyber Security. Amiseq provides various services for augmenting defense including managed perimeter, core endpoint and cloud security.
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/demas-logo.png" alt="" height="100px" width="250px">  
+          </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 10px;">Demas Machinery & Equipment Rental LLC </p>
+          <p class="card__description">Demas Machinery & Equipment Rental LLC is a company based in Dubai (UAE) specialized in the demolition sector, owned and managed by an Italian team of professionals undertaking Controlled Demolitions, Excavations and Special Equipment rentals.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/nirvatech-logo.png" alt="" height="100px" width="250px">  
+          </div>
+        <div class="card__content">
+            <p class="card__title">Nirvatech Measuring and Control Systems LLC</p>
+          <p class="card__description">NirvaTech (www.nirvatech.com) offers a diverse range of engineered products, including customized compressed air and gas solutions, nitrogen and oxygen generators, gas analyzer systems, industrial gearboxes, and genuine parts with reliable services for top air compressor brands.</p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/daalchini.jpg" alt="" height="100px" width="250px">  
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 15px;">Daalchini (UAE)</p>
+          <p class="card__description">Part of Simpra Holdings' diverse portfolio, Daalchini brings the rich and authentic flavors of Indian cuisine to the different spots in UAE (Century Village - UAE, World Trade Center - UAE, Al Khuwair - Muscat Oman, & Al Hail - Muscat Oman) offering a delightful culinary experience for food lovers. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Shanghai.jpg" alt="" height="100px" width="250px">  
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 15px;">Shanghai Station (UAE)</p>
+          <p class="card__description">Shanghai Station, a culinary gem under Simpra Holdings, brings authentic Chinese flavors to life with its signature selection of soups, dim sum, and traditional dishes. Located at The Greens, Dubai, UAE, and DMCC JLT, Dubai, UAE, it offers a dining experience that embodies the essence of Chinese cuisine. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Start Up Investment">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/Poke & Co.jpg" alt="" height="100px" width="250px">  
+        </div>
+        <div class="card__content">
+            <p class="card__title" style="margin-top: 40px;">Poke & Co (UAE)</p>
+          <p class="card__description">Poke & Co, a proud addition to Simpra Holdings' portfolio, serves the best poke bowls in the UAE. Operating through its innovative dark kitchen model, it brings fresh, flavorful experiences to food lovers across the region. 
+		  </p>
+        </div>
+      </article>
+
+      <article class="card" data-category="Companies-In-UAE">
+        <div class="card-img">
+            <img src="img/Simpra Holding Images/Simpra Holdings Investment Portfolio/Simpra Holdings Investment Portfolio/gugo.png" alt="" height="100px" width="250px">  
+        </div>
+        <div class="card__content">
+            <p class="card__title"style="margin-top: 10px;">Yugo Sushi</p>
+          <p class="card__description">Yugo Sushi, part of Simpra Holdings' portfolio, is a Japanese restaurant with locations in Emaar Business Park and Al Mass Tower, DMCC JLT. Inspired by the Japanese concept of "Yugo" (fusion), it reimagines traditional recipes with a modern twist, offering a unique and delightful dining experience. 
+		  </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.card');
+  
+  // Default settings: Show all cards and set "All" button as active
+  document.addEventListener('DOMContentLoaded', () => {
+    // Ensure all cards are displayed on page load
+    cards.forEach(card => {
+      card.style.display = 'block';
+    });
+  
+    // Set the "All" button as active
+    document.querySelector('[data-category="All"]').classList.add('active');
+  });
+  
+  // Filter functionality
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const category = button.getAttribute('data-category');
+  
+      // Update active button styling
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+  
+      // Check if "All" is clicked
+      if (category === 'All') {
+        // Show all cards
+        cards.forEach(card => {
+          card.style.display = 'block';
+        });
+      } else {
+        // Hide all cards first, then show the matching ones
+        cards.forEach(card => {
+          if (card.getAttribute('data-category') === category) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+    });
+  });
+</script>  
+
+				
 				<!-- <div class="container mb-5">
 					<div class="row justify-content-center pb-2 mb-3">
 						<div class="col-md-9 col-lg-12 text-center">

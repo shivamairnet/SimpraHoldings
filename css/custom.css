@@ -21,7 +21,7 @@ body {
 @media (max-width: 576px) {
     .position-absolute {
         left: 0;
-        top: 20%; /* Adjust vertical position for small screens */
+        top: 22%; /* Adjust vertical position for small screens */
         transform: translateX(5%) translateY(-10%); /* Adjust Y-axis with translateY */
     }
 
