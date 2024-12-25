@@ -326,12 +326,26 @@ body {
   background-size: cover; /* Ensures the image covers the div */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating */
+  min-height: 220px;
 }
 
 @media (max-width: 768px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .page-header {
+    width: 100% !important; /* Ensure the section width adapts to the screen */
+    padding: 40px !important; /* Add consistent padding */
+	background-color: white !important;
+	margin-top: 50px !important;
+  }
+
+  .page-header h2 {
+    font-size: 40px !important; /* Scale down the font size */
+	/* line-height: 1.5rem !important; */
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -500,6 +514,57 @@ body {
   }
 }
 
+@media (min-width: 769px) and (max-width: 1200px) {
+  /* Adjust button container */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .button-container .filter-btn {
+    flex: 1 1 auto;
+    margin: 5px;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  /* Adjust card container */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic card sizing */
+    justify-content: center; /* Center the cards */
+    gap: 20px;
+    padding: 0 15px; /* Add some side padding */
+  }
+
+  .card {
+    padding: 15px;
+    text-align: center;
+    max-width: 300px; /* Optional: To limit card width */
+    margin: 0 auto; /* Center-align the card itself */
+  }
+
+  .card-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .card__title {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .card__description {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+  }
+}
+
+
+
 			
 		
 </style>
@@ -521,7 +586,7 @@ body {
 										<img src="img/Simpra/Company.png" width="50" height="50" alt="" />
 									</a>
 								</div>
-								<a href="index.html" class="company-name ms-3 text-color-1">Simpra
+								<a href="index.html" class="company-name ms-3 text-color-1" style="font-size: 16px !important;">Simpra
 									Holdings</a>
 							</div>
 						</div>
@@ -534,31 +599,31 @@ body {
 										<nav class="collapse">
 											<ul class="nav nav-pills" id="mainNav">
 												<li><a href="index.html"
-														class="nav-link ">Home</a></li>
+														class="nav-link " style="font-size: 13px;">Home</a></li>
 												<li><a href="about.html"
-														class="nav-link">About</a></li>
+														class="nav-link" style="font-size: 13px;">About Us</a></li>
 												<!-- <li><a href="demo-cleaning-services-services.html"
 														class="nav-link">Services</a></li> -->
 												<li><a href="portfolio.html"
-														class="nav-link active">Portfolio</a></li>
+														class="nav-link active" style="font-size: 13px;">Portfolio</a></li>
 												<!-- <li><a href="demo-cleaning-services-blog.html" class="nav-link">Blog</a>
 												</li> -->
 												<li><a href="contact.html"
-														class="nav-link">Contact</a></li>
+														class="nav-link" style="font-size: 13px;">Contact</a></li>
 											</ul>
 										</nav>
 									</div>
 								</div>
 								<div class="feature-box feature-box-style-2 align-items-center ms-lg-4">
 									<div class="feature-box-icon d-none d-sm-inline-flex">
-										<img class="icon-animated" width="48"
+										<img class="icon-animated" width="46"
 											src="img/demos/cleaning-services/icons/phone.svg" alt="" data-icon
 											data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-tertiary position-relative bottom-3'}" />
 									</div>
-									<div class="feature-box-info ps-2">
-										<p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1">CALL US NOW</p>
+									<div class="feature-box-info ps-2" style="font-size: 13px;">
+										<p class="font-weight-semibold line-height-1 text-2 pb-0 mb-1" style="font-size: 13px;">CALL US NOW</p>
 										<a href="tel:+1234567890"
-											class="text-color-tertiary text-color-hover-primary text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0">+97143948446</a>
+											class="text-color-tertiary text-color-hover-primary text-decoration-none font-weight-bold line-height-1 custom-font-size-1 pb-0" style="font-size: 13px;">+97143948446</a>
 									</div>
 								</div>
 								<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse"
@@ -574,10 +639,10 @@ body {
 
 		<div role="main" class="main">
 
-			<div class="container mb-5 pb-0 backgd">
-				<section style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto;">
+			<div class="page-header container mb-5 pb-0 backgd">
+				<section style="display: flex; flex-wrap: wrap; justify-content: center; margin: 0 auto;text-align: center;">
 					<div style="padding: 20px; border-radius: 8px; min-width: 300px;text-align: center !important;justify-content: center !important;display: flex;">
-					  <h2 class="appear-animation" style="margin-top: 35px; font-size: 44px; color:white;font-weight: 700;text-align: center !important;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
+					  <h2 class="appear-animation" style="margin-top: 65px; font-size: 44px; color:white;font-weight: 700;text-align: center !important;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our Investment Portfolio</h2>
 					</div>
 				  </section>
 			</div>
@@ -586,7 +651,7 @@ body {
 				<hr class="border-radius" style="background-color: #0052CC;">
 			</div>
 			<div>
-				<p class="investment-section appear-animation text-center" style="margin-top: 50px;margin-bottom: 30px; font-size: 1.2rem; color: black;line-height: 1.95rem;font-weight: 500;padding-left: 200px;padding-right: 200px;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
+				<p class="investment-section appear-animation text-center" style="margin-top: 50px;margin-bottom: 30px; font-size: 1.2rem; color: black;line-height: 1.95rem;font-weight: 500;padding-left: 200px;padding-right: 200px;margin: 20px auto;" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2400">Our portfolio is a growing basket of companies with different investment options. We have total investments in the companies we directly control and manage on a daily basis. In a few companies we have a sizable investment and we play a mentor and governance role. We also have public equity in distinguished technology companies such as Alphabet Inc, Apple, Alibaba Group, Microsoft, Facebook, and Gilead Sciences.</p>
 			</div>
 
 
