@@ -4,7 +4,7 @@ body {
 
 @media (min-width: 1200px) {
 		.container {
-				max-width: 1200px !important;
+				max-width: 1205px !important;
 		}
 }
 
@@ -343,7 +343,7 @@ html.sticky-header-active #header .header-top {
 
 .custom-accordion-style-1 > .card .card-header a {
 		position: relative;
-		padding: 23px 30px;
+		padding: 20px 26px;
 		background-color: #FFF;
 		transition: ease background-color 300ms, ease color 300ms;
 }
