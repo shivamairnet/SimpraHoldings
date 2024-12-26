@@ -245,6 +245,7 @@
     background-image: url('img/Simpra Holding Images/homepage/Future Innovations.png') !important; /* Replace with mobile image */
     background-size: cover !important;
     background-position: center !important;
+	width: 100% !important;
   }
 
   /* Slide 2 */
@@ -252,6 +253,7 @@
     background-image: url('img/Simpra Holding Images/homepage/Boundless Vision.png') !important; /* Replace with mobile image */
     background-size: cover !important;
     background-position: center !important;
+	width: 100% !important;
   }
 
   /* Slide 3 */
@@ -259,6 +261,7 @@
     background-image: url('img/Simpra Holding Images/homepage/Partnerships.png') !important; /* Replace with mobile image */
     background-size: cover !important;
     background-position: center !important;
+	width: 100% !important;
   }
 
   /* Text Adjustments */
@@ -302,6 +305,12 @@
     }
 } */
 
+/* @media(min-width:769px) and (max-width:1400px){
+	.shape-divider{
+		display: none !important;
+	}
+} */
+
 @media (max-width: 768px) { /* Adjust the max-width as needed for your breakpoints */
     .shape-divider {
         display: none;
@@ -317,8 +326,13 @@
 	}
 }
 
+@media(max-width:768px){
+.card-mobile{
 
-		
+	height: 490px !important;
+ 
+}
+}
 	</style>
 
 </head>
@@ -400,7 +414,7 @@
 					<div class="owl-stage">
 
 						<!--Changes made in Carousel Slide 1,2,3(Colour Change, Background Image, Animation)-->
-						<!-- Carousel Slide 1 -->
+					
 						<!-- Carousel Slide 1 -->
 						<div class="owl-item position-relative">
 							<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0 animated kenBurnsToRightTop"
@@ -905,31 +919,30 @@
 						<div class="col">
 							<div class="owl-carousel nav-outside nav-arrows-1 custom-carousel-box-shadow-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="750" data-plugin-options="{'responsive': {'0': {'items': 1}, '479': {'items': 1}, '768': {'items': 2}, '979': {'items': 3}, '1199': {'items': 3}}, 'autoplay': false, 'autoplayTimeout': 5000, 'autoplayHoverPause': true, 'dots': false, 'nav': true, 'loop': false, 'margin': 20, 'stagePadding': '75'}">
 								<div>
-									<a href="index.html" class="text-decoration-none">
-										<div class="card custom-card-style-1">
-											<div class="card py-5 text-center" style="display: flex; justify-content: center; align-items: center; font-size: 0.9em; height:450px;">
-												<div class="custom-card-style-1-image-wrapper  rounded-circle" style="width: 150px; height: 150px;">
+									<div class="text-decoration-none">
+										<div class="card custom-card-style-1" >
+											<div class="card-mobile card text-center py-5 " style="display: flex; justify-content: center; align-items: center;font-size: 0.9em; height:450px;">
+												<div
+													class="custom-card-style-1-image-wrapper  rounded-circle" style="width: 150px; height: 150px;">
 													<img src="img/Simpra Holding Images/Simpra Holdings Images/Section 6 - Communication.png"
-													class="pb-3" 
-														 style="width: 190px; height: 190px;"
-														 alt="" />
+														class="mt-2" style="width: 190px; height: 190px; margin-right: 10px;" alt="" />
 												</div>
-												<h4 class="custom-card-style-1-title text-color-dark font-weight-bold mb-2" style="font-size: 24px;padding-top: 5px;padding-bottom: 5px;margin-top: 25px;">
-													Communication
-												</h4>
-												<p class="custom-card-style-1-description p-1 text-5 px-4"> 
-													We make sure to communicate clearly and consistently with our partners and clients to ensure that all technical needs are understood and met.
+												<h4
+													class="custom-card-style-1-title text-color-dark font-weight-bold mb-2" style="font-size: 24px;padding-top: 5px;padding-bottom: 5px;margin-top: 25px;">
+													Communication</h4>
+												<p class="custom-card-style-1-description p-2 text-5 px-4">We make sure to communicate clearly and consistently with our clients to ensure that all technical needs are understood and met.
+ 
 												</p>
 												<!-- <span class="custom-card-style-1-link font-weight-bold">VIEW MORE</span> -->
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 								
 								<div>
-									<a href="" class="text-decoration-none">
+									<div class="text-decoration-none">
 										<div class="card custom-card-style-1" >
-											<div class="card text-center py-5 " style="display: flex; justify-content: center; align-items: center;font-size: 0.9em; height:450px;">
+											<div class="card-mobile card text-center py-5 " style="display: flex; justify-content: center; align-items: center;font-size: 0.9em; height:450px;">
 												<div
 													class="custom-card-style-1-image-wrapper  rounded-circle" style="width: 150px; height: 150px;">
 													<img src="img/Simpra Holding Images/Simpra Holdings Images/Sectipon 6 -Security.png"
@@ -943,12 +956,12 @@
 												<!-- <span class="custom-card-style-1-link font-weight-bold">VIEW MORE</span> -->
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 								<div>
-									<a href="" class="text-decoration-none">
+									<div class="text-decoration-none">
 										<div class="card custom-card-style-1">
-											<div class="card text-center py-5" style="display: flex; justify-content: center; align-items: center;font-size: 0.9em; height: 450px;">
+											<div class="card-mobile card text-center py-5" style="display: flex; justify-content: center; align-items: center;font-size: 0.9em; height: 450px;">
 												<div
 													class="custom-card-style-1-image-wrapper  rounded-circle " style="width: 150px; height: 150px;">
 													<img src="img/Simpra/Innovation Section 6.png"
@@ -962,7 +975,7 @@
 												<!-- <span class="custom-card-style-1-link font-weight-bold">VIEW MORE</span> -->
 											</div>
 										</div>
-									</a>
+									</div>
 								</div>
 							</div>
 						</div>
