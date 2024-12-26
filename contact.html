@@ -47,6 +47,7 @@
 
 		<!-- Head Libs -->
 		<script src="vendor/modernizr/modernizr.min.js"></script>
+	
 
 		<script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -292,12 +293,12 @@
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-4">
-                                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" required placeholder="Your Message"></textarea>
+                                        <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" id="message" placeholder="Your Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-group col mb-0 d-flex justify-content-center">
-                                        <button type="submit" onclick="sendForm()" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">SEND MESSAGE</button>
+                                        <button type="submit" onclick="sendForm(event)" class="btn btn-primary btn-modern font-weight-bold text-3 px-5 py-3" data-loading-text="Loading...">SEND MESSAGE</button>
                                     </div>
                                 </div>
                             </form>
@@ -518,39 +519,51 @@
 			}
 
 		</script>
-		<!-- testing contact-form -->
-		<script type="text/javascript">
-			emailjs.init("CW-Njv0Fhg1wZ97EB"); 
-		  
-			function sendForm() {
-				// Pre
-				const form = document.getElementById('contact-form');
-				if (!form) {
-					console.error("Form element not found!");
-					return;
+		
+		  <!-- testing contact-form -->
+			<script type="text/javascript">
+				emailjs.init("CW-Njv0Fhg1wZ97EB");
+			
+				function sendForm(event) {
+					// Prevent the default form submission
+					event.preventDefault();
+			
+					const form = document.getElementById('contact-form');
+					if (!form) {
+						console.error("Form element not found!");
+						return;
+					}
+			
+					// Perform form validation manually
+					if (!form.checkValidity()) {
+						console.error("Form validation failed.");
+						return;
+					}
+			
+					// Collect form data manually into a params object
+					const params = {
+						name: form.name.value,
+						message: form.message.value,
+						email: form.email.value,
+						phone: form.phone.value,
+						subject: form.subject.value,
+					};
+			
+					// Use EmailJS to send the params object
+					emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
+						.then(function(response) {
+							console.log("Success:", response);
+							console.log(params);
+							// Show success message
+							document.querySelector(".contact-form-success").classList.remove("d-none");
+						})
+						.catch(function(error) {
+							console.error("Error:", error);
+							// Show error message
+							document.querySelector(".contact-form-error").classList.remove("d-none");
+						});
 				}
-		  
-				// Collect form data manually into a params object
-				const params = {
-					name: form.name.value,
-					message:form.message.value,
-					email: form.email.value,
-					phone: form.phone.value,
-					subject: form.subject.value,
-					// message: form.message.value,
-				};
-		  
-				// Use EmailJS to send the params object
-				emailjs.send("service_x6xkiws", "template_hp5vvuo", params)
-				// console.log(params)
-					.then(function(response) {
-						console.log("Success:", response);
-						console.log(params);
-						// Show success message
-						document.querySelector(".contact-form-success").classList.remove("d-none");
-					}, );
-			}
-		  </script>
+			</script>
 
 	</body>
 </html>
