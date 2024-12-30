@@ -242,10 +242,12 @@
 @media (max-width: 768px) {
   /* Slide 1 */
   .owl-item:nth-child(1) .background-image-wrapper {
-    background-image: url('img/Simpra Holding Images/homepage/Future Innovations.png') !important; /* Replace with mobile image */
+    background-image: url('img/Simpra Holding Images/homepage/holding-landing.jpg') !important; /* Replace with mobile image */
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
+	height: 300px !important;
+	
   }
 
   /* Slide 2 */
@@ -254,6 +256,7 @@
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
+	height: 300px !important;
   }
 
   /* Slide 3 */
@@ -262,6 +265,7 @@
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
+	height: 300px !important;
   }
 
   /* Text Adjustments */
@@ -333,6 +337,49 @@
  
 }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Reduce the height of the carousel container */
+  #home {
+    height: 70vh; /* Adjust the overall carousel height */
+  }
+
+  /* Adjust the height of the background image */
+  .background-image-wrapper {
+    height: 70%; /* Reduce the height of the image */
+    background-size: cover; /* Ensure the image covers the container */
+    background-position: center; /* Center the image */
+  }
+
+  /* Adjust content positioning for reduced height */
+  /* .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+  } */
+
+  /* Optional: Adjust text sizes for better alignment */
+  /* #home h1 {
+    font-size: 2rem;
+  }
+
+  #home p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  #home a.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  } */
+}
+
+
+
+
+
+
 	</style>
 
 </head>
@@ -408,7 +455,7 @@
 		<div role="main" class="main">
 
 			<div id="home"
-				class="carousel-section owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual custom-dots-style-1 dots-inside dots-horizontal-center show-dots-hover show-dots-xs dots-light nav-style-1 nav-inside nav-inside-plus nav-light nav-md nav-font-size-md show-nav-hover mb-0"
+				class="home-carousel carousel-section owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual custom-dots-style-1 dots-inside dots-horizontal-center show-dots-hover show-dots-xs dots-light nav-style-1 nav-inside nav-inside-plus nav-light nav-md nav-font-size-md show-nav-hover mb-0"
 				data-plugin-options="{'autoplayTimeout': 7000, 'autoplay': true}" style="height: 100vh;">
 				<div class="owl-stage-outer">
 					<div class="owl-stage">
@@ -422,7 +469,7 @@
 							</div>
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
-									<div class="col-lg-7 text-center mb-4 pb-5 pb-lg-0">
+									<div class="col-lg-7 mt-4 text-center mb-4 pb-5 pb-lg-0">
 										<h1 class="d-inline-block text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation"
 											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
 											Future Innovations
@@ -455,7 +502,7 @@
 						</div>
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
-									<div class="col-lg-7 text-center mb-4 pb-5 pb-lg-0">
+									<div class="col-lg-7 mt-4 text-center mb-4 pb-5 pb-lg-0">
 										<h1 class="text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation"
 											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
 											Expert Partnership
@@ -485,7 +532,7 @@
 						</div>
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
-									<div class="col-lg-7 text-center mb-4 pb-5 pb-lg-0">
+									<div class="col-lg-7 text-center mt-4 mb-4 pb-5 pb-lg-0">
 										<h1 class="text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation"
 											data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
 											Boundless Vision </h1>
@@ -704,7 +751,7 @@
 									<div id="collapse1Two" class="collapse" aria-labelledby="collapse1HeadingTwo"
 										data-bs-parent="#accordion1">
 										<div class="card-body">
-											<p class="mb-0"> At Simpra, we understand that every business is unique, and so are their financial needs, which is why we have made our investment approach flexible, with a timeline ranging from 3 to 10 years, allowing us to tailor our involvement to suit your specific requirements and business goals
+											<p class="mb-0"> At Simpra, we understand that every business is unique, and so are their financial needs, which is why we have made our investment approach flexible, with a timeline ranging from 3 to 10 years, allowing us to tailor our involvement to suit your specific requirements and business goals.
 											</p>
 										</div>
 									</div>
@@ -896,7 +943,7 @@
 								</div>
 							</div>
 							<h3 class="text-color-dark font-weight-bold text-transform-none text-10 mb-3 pb-1 appear-animation"
-								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Innovate.Lead.Succeed
+								data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">Innovate Lead Succeed
 							</h3>
 							<p class="mb-0 appear-animation text-4" data-appear-animation="fadeInUpShorter"
 								data-appear-animation-delay="1400"> We invest in partner companies in technology sectors, but we also have our own technology division that develops, integrates and maintains technology solutions.</p>
@@ -1175,7 +1222,7 @@
 			<div class="container">
 				<div class="row py-5 custom-row-footer">
 					<div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
-						<img width="120" height="100" src="img/Simpra/Company.png" alt="Logo Footer" style="margin-bottom: 10px;">
+						<img width="100" height="100" src="img/Simpra/Company.png" alt="Logo Footer" style="margin-bottom: 10px;">
 						<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Holdings,</br>
 							Unit 3008, Mazaya Business Ave. AA1 Tower, P.O.Box 391935, Dubai-UAE
 						

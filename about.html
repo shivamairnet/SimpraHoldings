@@ -176,11 +176,20 @@
   padding-left: 60px;
   padding-right: 60px;
   background-repeat: no-repeat; /* Prevents the image from repeating */
-  height: 290px;
+  /* height: 300px; */
 
 }
 
-@media (min-width: 1300px) and (max-width:1599px) {
+@media (min-width: 1300px) and (max-width:1499px) {
+  .backgd {
+    height: 325px !important; /* Adjust height for smaller screens */
+  }
+  .h1{
+	margin-top:35px !important
+  }
+}
+
+@media (min-width: 1500px) and (max-width:1599px) {
   .backgd {
     height: 350px !important; /* Adjust height for smaller screens */
   }
@@ -319,7 +328,7 @@ height: auto !important;
     justify-content: center; /* Vertically center content */
     align-items: center; /* Horizontally center content */
     text-align: center;
-    min-height: 375px !important; /* Ensure all cards have the same minimum height */
+    min-height: 355px !important; /* Ensure all cards have the same minimum height */
   }
 
   .strategic-cards-p {
@@ -331,9 +340,25 @@ height: auto !important;
   }
 }
 
-@media (min-width:768px) and (max-width:1399px){
+@media (min-width:768px) and (max-width:1200px){
 	.strategic-cards{
-		height: 340px !important;
+		height: 320px !important;
+		display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    align-items: center; /* Horizontally center content */
+    text-align: center;
+	}
+
+	.strategic-cards-p {
+    margin-top: 20px !important;
+   
+  }
+}
+
+@media (min-width:1201px) and (max-width:1399px){
+	.strategic-cards{
+		height: 260px !important;
 		display: flex;
     flex-direction: column;
     justify-content: center; /* Vertically center content */
@@ -538,7 +563,7 @@ height: auto !important;
 										<div class="card-body text-center bg-color-light-scale-1 py-4">
 											<h4 class="text-color-dark font-weight-bold line-height-1 text-8 mb-2" style="padding-top: 1.2rem;"> Empowering Success</h4>
 											<!-- <p class="custom-font-secondary text-4 mb-4">New Office</p> -->
-											<p class="mb-0 mt-5 strategic-cards-p" style="font-size: 15px;padding-left: 15px;padding-right: 15px;"> We offer more than just capital. We provide knowledge, guidance, and a collaborative approach to help our partners succeed and accelerate their path from early-stage growth to market leader.</p>
+											<p class="mb-0 mt-5 strategic-cards-p" style="font-size: 15px;padding-left: 15px;padding-right: 15px;"> We provide capital, guidance, and collaboration to accelerate our partners' growth from early-stage to market leadership.</p>
 										</div>
 									</div>
 								</div>
@@ -676,7 +701,7 @@ height: auto !important;
 				<div class="container">
 					<div class="row py-5 custom-row-footer">
 						<div class="col-12 col-sm-6 col-lg-3 d-flex align-items-start flex-column footer-column custom-footer-column-logo">
-							<img width="120" height="100" src="img/Simpra/Company.png" alt="Logo Footer" style="margin-bottom: 10px;">
+							<img width="100" height="100" src="img/Simpra/Company.png" alt="Logo Footer" style="margin-bottom: 10px;">
 							<p class="d-block m-0 text-color-default" style="width: 300px;">Simpra Holdings,</br>
 								Unit 3008, Mazaya Business Ave. AA1 Tower, P.O.Box 391935, Dubai-UAE
 							
