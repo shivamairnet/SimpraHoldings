@@ -246,7 +246,7 @@
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
-	height: 300px !important;
+	height: 350px !important;
 	
   }
 
@@ -256,7 +256,7 @@
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
-	height: 300px !important;
+	height: 350px !important;
   }
 
   /* Slide 3 */
@@ -265,7 +265,7 @@
     background-size: cover !important;
     background-position: center !important;
 	width: 100% !important;
-	height: 300px !important;
+	height: 350px !important;
   }
 
   /* Text Adjustments */
@@ -326,8 +326,14 @@
 	}
 
 	.carousel-section{
-		height: 50vh !important;
+		height: 38vh !important;
 	}
+}
+
+@media(max-width:1065px){
+	.shape-divider {
+        display: none;
+    }
 }
 
 @media(max-width:768px){
@@ -341,13 +347,13 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Reduce the height of the carousel container */
   #home {
-    height: 70vh; /* Adjust the overall carousel height */
+    height: 80vh; 
   }
 
   /* Adjust the height of the background image */
   .background-image-wrapper {
-    height: 70%; /* Reduce the height of the image */
-    background-size: cover; /* Ensure the image covers the container */
+    height: 70%; 
+    background-size: contain; /* Ensure the image covers the container */
     background-position: center; /* Center the image */
   }
 
@@ -373,11 +379,25 @@
     font-size: 1rem;
     padding: 10px 20px;
   } */
+
+ 
 }
 
 
+@media (min-width: 769px) and(max-width:1065px) {
+  .custom-card-style-1-image-wrapper {
+    width: 150px !important; /* Keep a consistent width */
+    height: 150px !important; /* Keep a consistent height */
+    border-radius: 50% !important; /* Ensures the wrapper stays circular */
+    overflow: hidden !important; /* Ensures the image doesn't overflow outside the circle */
+  }
 
-
+  .custom-card-style-1-image-wrapper img {
+    width: 100% !important; /* Make the image fill the wrapper width */
+    height: auto !important ; /* Maintain the image's aspect ratio */
+    object-fit: cover !important; /* Ensure the image fits within the circular shape */
+  }
+}
 
 
 	</style>
